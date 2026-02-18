@@ -1,0 +1,12 @@
+[project]
+name = "pydanclick-but-different"
+version = "0.1.0"
+description = "Create click option fields from pydantic models. Inspired by felix-martel/pydanclick."
+readme = "README.md"
+authors = [{ name = "Sam Laird", email = "me@slaird.dev" }]
+requires-python = ">=3.14"
+dependencies = ["click>=8.3.1", "pydantic>=2.12.5"]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
