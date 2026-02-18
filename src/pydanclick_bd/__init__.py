@@ -1,2 +1,1 @@
-def hello() -> str:
-    return "Hello from pydanclick-but-different!"
+from pydanclick_bd.options import pydantic_option

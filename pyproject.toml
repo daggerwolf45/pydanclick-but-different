@@ -5,8 +5,14 @@ description = "Create click option fields from pydantic models. Inspired by feli
 readme = "README.md"
 authors = [{ name = "Sam Laird", email = "me@slaird.dev" }]
 requires-python = ">=3.14"
-dependencies = ["click>=8.3.1", "pydantic>=2.12.5"]
+dependencies = [
+    "click>=8.3.1",
+    "pydantic>=2.12.5",
+]
 
 [build-system]
 requires = ["uv_build>=0.10.4,<0.11.0"]
 build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "pydanclick_bd"
