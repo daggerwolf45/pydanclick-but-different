@@ -1,7 +1,7 @@
 # Pydanclick (but-different)
 > Generate [Click](https://click.palletsprojects.com/en/stable/) options from [Pydantic](https://github.com/pydantic/pydantic) models
 
-Inspired by the original (and fantastic) [Pydanclick](felix-martel.github.io/pydanclick/) by [*Felix Martel*](https://github.com/felix-martel), writen from scratch without the use of AI.
+Inspired by the original (and fantastic) [Pydanclick](fhttps://felix-martel.github.io/pydanclick/) by [*Felix Martel*](https://github.com/felix-martel), writen from scratch without the use of AI.
 
 ### Differences from Pydanclick
 * Uses Field extra data for overrides, rather than passing through the decorator
@@ -39,7 +39,7 @@ def cli(mymodel: MyModel, named_something_unique: MyOtherModel):
     # your click method here
     ...
 ```
-```shell
+```
 ~ python click_app.py --help
 Usage: click_app.py [OPTIONS]
 
