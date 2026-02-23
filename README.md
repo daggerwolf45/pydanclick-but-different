@@ -1,7 +1,15 @@
-# Pydanclick (but-different)
-> Generate [Click](https://click.palletsprojects.com/en/stable/) options from [Pydantic](https://github.com/pydantic/pydantic) models
+# Pydanclick (but-different) 
+![Release](https://img.shields.io/github/v/release/daggerwolf45/pydanclick-but-different)
+![Build status](https://img.shields.io/github/actions/workflow/status/daggerwolf45/pydanclick-but-different/publish_to_pypi.yml)
+![License](https://img.shields.io/github/license/daggerwolf45/pydanclick-but-different)
+<!-- ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pydanclick-but-different) -->
+
+> Generate [Click](https://click.palletsprojects.com/en/stable/) options from [Pydantic](https://github.com/pydantic/pydantic) models 
 
 Inspired by the original (and fantastic) [Pydanclick](https://felix-martel.github.io/pydanclick/) by [*Felix Martel*](https://github.com/felix-martel), writen from scratch without the use of AI.
+
+
+<hr>
 
 ### Differences from Pydanclick
 * Uses Field extra data for overrides, rather than passing through the decorator
