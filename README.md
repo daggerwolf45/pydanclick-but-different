@@ -15,7 +15,7 @@ Inspired by the original (and fantastic) [Pydanclick](fhttps://felix-martel.gith
 # Installation / Basic Usage
 Install via pip/uv/your_package_manager_of_choice
 ```shell
-pip install pydanclick-bd
+pip install pydanclick-but-different
 ```
 To then use simply call the `pydantic_option` decorator with your pydantic model, on a click endpoint
 ```python
