@@ -27,7 +27,7 @@ pip install pydanclick-but-different
 ```
 To then use simply call the `pydantic_option` decorator with your pydantic model, on a click endpoint
 ```python
-from pydanclick-bd import pydantic_option
+from pydanclick_bd import pydantic_option
 
 class MyEnum(Enum):
     RedPill = auto()
@@ -65,7 +65,7 @@ Options:
 
 ## Details
 ### Supported types
-| Field Type                            | Passed as       |
+| Field Type                               | Passed as            |
 | :--------------------------------------- | :------------------- |
 | `bool`                                   | `click.BOOL`         |
 | `str`                                    | `click.STRING`       |
@@ -74,16 +74,16 @@ Options:
 | `pathlib.Path`                           | `click.Path()`       |
 | `UUID`                                   | `click.UUID`         |
 | `datetime`, `date`                       | `click.DateTime()`   |
-| `Enum`                                   | `click.Choice`       |
+| `Enum`                                   | `click.Choice()`     |
 
 ### Supported Field Flags
-| Field(...) parameter | Description |
-| :------------------- | :---------- |
-| `description`          | Help string |
-| `required`            | Explicitly mark field as required (default) |
+| Field(...) parameter        | Description |
+| :-------------------------- | :---------- |
+| `description`               | Help string |
+| `required`                  | Explicitly mark field as required (default) |
 | `alias`, `validation_alias` | Use as `Option` name |
-| `hidden`              | Hide field from help message |
-| `default`             | Default value/mark un-required |
-| `gt/ge/lt/le`         | Use specified range (Note, this passes as `<int\|float>Range()`)
-| `prompt`              | Prompt user for input if option is not provided. |
-| `hide_input`          | Hide's user input if prompted (password mode)
+| `hidden`                    | Hide field from help message |
+| `default`                   | Default value/mark un-required |
+| `gt/ge/lt/le`               | Use specified range (Note, this passes as `<int\|float>Range()`) |
+| `prompt`                    | Prompt user for input if option is not provided. |
+| `hide_input`                | Hide's user input if prompted (password mode) |
