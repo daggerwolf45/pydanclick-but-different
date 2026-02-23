@@ -46,7 +46,7 @@ def parse_type(field: "FieldInfo") -> type | click.ParamType:
         return field.annotation
     if type(field.annotation) is EnumType:
         return click.Choice(field.annotation)
-    if field.annotation is datetime.datetime or datetime.date:
+    if field.annotation is datetime.datetime or field.annotation is datetime.date:
         return click.DateTime()
     return click.STRING
 
